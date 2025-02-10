@@ -4,21 +4,25 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
+    }
+
+    kotlinOptions {
+        freeCompilerArgs += ["-module-name", "rxlifecycle-android-lifecycle-kotlin-4"]
     }
 }
 
 repositories {
     mavenCentral()
     google()
+    jcenter()
 }
 
 dependencies {
-    compile kotlinStdlib
-    compile project(':rxlifecycle-android-lifecycle')
+    implementation kotlinStdlib
+    api project(':rxlifecycle-android-lifecycle')
 }
 
 apply from: "$rootDir/gradle/artifacts.gradle"

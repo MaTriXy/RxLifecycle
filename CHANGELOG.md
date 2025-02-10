@@ -1,5 +1,39 @@
 # Changelog
 
+## 4.0.2 (2020-11-05)
+
+- [#332](https://github.com/trello/RxLifecycle/pull/332): Namespace Kotlin module names
+
+## 4.0.1 (2020-10-29)
+
+- [#330](https://github.com/trello/RxLifecycle/pull/330): Corrected package name in rxlifecycle-android-lifecycle-kotlin
+
+## 4.0.0 (2020-05-23)
+
+This major revision was made to support RxJava 3. RxLifecycle 4.0 lives in a new namespace and
+package names so that it can work side-by-side with previous versions of RxLifecycle.
+
+- [#317](https://github.com/trello/RxLifecycle/pull/317): Upgrade to RxJava 3
+- [#319](https://github.com/trello/RxLifecycle/pull/319): Updated namespace to com.trello.rxlifecycle4
+
+## 3.1.0 (2019-09-21)
+
+- [#290](https://github.com/trello/RxLifecycle/pull/290): Fixed up some missing rxlifecycle3 conversions
+- [#308](https://github.com/trello/RxLifecycle/pull/308): Support LayoutId constructors for AppCompatActivity and (AndroidX)Fragment
+
+## 3.0.0 (2018-10-25)
+
+- [#285](https://github.com/trello/RxLifecycle/pull/285): Updated base package to com.trello.rxlifecycle3
+- [#284](https://github.com/trello/RxLifecycle/pull/284): Deprecate rxlifecycle-navi
+- [#283](https://github.com/trello/RxLifecycle/pull/283): Upgraded to AndroidX
+
+## 2.2.2 (2018-07-29)
+
+- [#275](https://github.com/trello/RxLifecycle/pull/275): Updated dependencies
+
+Normally simply updating dependencies wouldn't justify a new release, except that there are some R8 issues with
+RxLifecycle (due to it being compiled with Android lifecycle 1.0.0 instead of 1.1.0).
+
 ## 2.2.1 (2017-11-15)
 
 - [#248](https://github.com/trello/RxLifecycle/pull/248): Remove generic type declaration for Completable bindings
